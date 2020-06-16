@@ -13,4 +13,4 @@ function Box(props) {
     return <div className="box" onClick={toggleText}>{text}</div>
 }
 
-export default Box
+export default Box;
