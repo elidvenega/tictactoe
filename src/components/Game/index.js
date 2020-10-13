@@ -13,7 +13,7 @@ function Game() {
         board[row][col] = turn
         
          setTurn(turn => turn === 'x' ? 'o'  : 'x')
-
+ 
          const winner = checkForWin()
 
          if(!winner) {
@@ -93,7 +93,7 @@ function Game() {
             
         </div>
 
-    </div>
+    </div> 
 }
 
 export default Game
