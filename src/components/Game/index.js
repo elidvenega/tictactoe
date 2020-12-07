@@ -7,7 +7,7 @@ const board = [[],[],[]]
 function Game() {
 
     const [turn, setTurn] = useState('x')
-    const [winningtext, setWinningText] = useState('')
+    const [winningText, setWinningText] = useState('')
       
     function changeTurn(row ,col) {
         board[row][col] = turn
@@ -70,7 +70,7 @@ function Game() {
 
     return <div id="game">
         <h1>Tic Tac Toe</h1>
-        <div id="winning-text">{winningtext}</div>
+        <div id="winning-text">{winningText}</div>
         <div className="row">
         <Box row={0} col={0} currentState={turn} changeTurn={changeTurn}/>
         <Box row={0} col={1} currentState={turn} changeTurn={changeTurn}/>
@@ -96,4 +96,4 @@ function Game() {
     </div> 
 }
 
-export default Game
+export default Game;

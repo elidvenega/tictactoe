@@ -1,10 +1,10 @@
-import React, { useState } from 'react'
-import './style.css'
+import React, { useState } from 'react';
+import './style.css';
 
 function Box(props) {
     const [text, setText] = useState('')
 
-    function toggleText(){
+    const toggleText = () => {
         if(text === '') {
             setText(props.currentState)
             props.changeTurn(props.row, props.col)
